@@ -1,3 +1,4 @@
+package Ex1;
 
 public class StringFunctions {
 
