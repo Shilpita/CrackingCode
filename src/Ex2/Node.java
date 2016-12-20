@@ -64,7 +64,7 @@ public class Node {
 			Node n = head;
 			System.out.println();
 			while(n!= null){
-				System.out.print(n.getData() +"->");
+				System.out.print(n.getData() +"\t");
 				n = n.next;
 			}
 		}
