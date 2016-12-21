@@ -6,52 +6,41 @@ public class PartitionList {
 		Node temp = head;
 		Node less = null;
 		Node more = null;
-		Node lessHead = null;
-		Node moreHead = null;
-		while(temp.next != null){
-			//System.out.println("\n"+head.data);
+		
+		while(temp != null){
+			Node nextNode = temp.next;
+			temp.next = null;
 			if(temp.data < n){
-				System.out.println("\n"+temp.data);
-				if(less == null){
+				if(less == null && more == null){
 					less = temp;
-					lessHead = less;
-				}else{
-					while(less.next!= null) less = less.next;
-					System.out.println(less.data);
-					less.next = temp;
+					more = temp;
+				}else if(less != null){
+					temp.next = less;
+					less = temp;
 				}
 			}else{
-				System.out.println("more:"+ temp.data);
-				if(more == null){
-					more = temp;
-			        moreHead = more;
-				}else{
-					while(more!= null) more = more.next;
+				if(more!=null){
 					more.next = temp;
+					more = temp;
 				}
-			}	
-			temp = temp.next;
+			}
+			temp = nextNode;
 		}
-		
-
-		return lessHead;
-		
+		return less;
 	}
 
 	public static void main(String[] args) {
 		Node head = new Node(1);
-		head.insert(head, 2);
-		head.insert(head, 3);
-		head.insert(head, 2);
-		head.insert(head, 4);
-		head.insert(head, 5);
-		head.insert(head, 6);
-		
+        for (int i=9 ; i>= 4 ;i--)
+        	head.insert(head, i);
+        for (int i=0 ; i<= 6 ;i++)
+        	head.insert(head, i);
+        
 		head.printList(head);
 		
-		Node result = partition(head,3);
+		Node result = partition(head,5);
 		
-		//result.printList(result);
+		result.printList(result);
 		
 	}
 
