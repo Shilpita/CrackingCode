@@ -2,7 +2,7 @@ package Ex1;
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : May22,2016
- * Problem: Replace the whitespace in the string with '%20' 
+ * Problem: URLify -> Replace the whitespace in the string with '%20' 
  *          Cracking the Coding Interview
  * ***************************************************************************************/
 import java.util.Scanner;

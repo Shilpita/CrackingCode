@@ -2,7 +2,7 @@ package Ex1;
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : June5,2016
- * Problem: Replace the row and column with 0 in a Matrix M*N
+ * Problem: Replace 0-> Replace the row and column with 0 in a Matrix M*N
  *          Cracking the Coding Interview
  * ***************************************************************************************/
 public class MatrixReplace0 {

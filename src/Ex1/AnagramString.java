@@ -2,7 +2,7 @@ package Ex1;
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : May21,2016
- * Problem: Given string is permutation or anagram the other String 
+ * Problem: Check Permutation-> Given string is permutation or anagram the other String 
  *          Cracking the Coding Interview
  * ***************************************************************************************/
 

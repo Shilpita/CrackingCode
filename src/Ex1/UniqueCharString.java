@@ -2,7 +2,7 @@ package Ex1;
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : May21,2016
- * Problem: Determine if input String has Unique characters 
+ * Problem: Is Unique-> Determine if input String has Unique characters 
  *          Cracking the Coding Interview
  * ***************************************************************************************/
 

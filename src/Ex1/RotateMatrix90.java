@@ -2,7 +2,7 @@ package Ex1;
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : June3,2016
- * Problem: Rotate given N*N marix by 90
+ * Problem: Rotate Matrix 90-> Rotate given N*N marix by 90
  *          Cracking the Coding Interview
  * ***************************************************************************************/
 public class RotateMatrix90 {

@@ -2,7 +2,7 @@ package Ex1;
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : May27,2016
- * Problem: Is the given string S2 is rotation of S1
+ * Problem: StringRotation -> Is the given string S2 is rotation of S1
  *          Cracking the Coding Interview
  * ***************************************************************************************/
 import java.util.Scanner;

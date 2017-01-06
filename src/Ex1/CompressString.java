@@ -2,7 +2,7 @@ package Ex1;
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : May29,2016
- * Problem: Compress a given string for eg : aaBBB = a2B3 
+ * Problem: String Compression -> Compress a given string for eg : aaBBB = a2B3 
  *          Cracking the Coding Interview
  * ***************************************************************************************/
 
