@@ -1,4 +1,11 @@
 package Ex2;
+/**************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Dec16,2016
+ * Problem: Remove all duplicate node from list.
+ *          Cracking the Coding Interview
+ * ***************************************************************************************/
+
 
 import java.util.HashSet;
 

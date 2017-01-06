@@ -1,4 +1,10 @@
 package Ex2;
+/**************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Dec19,2016
+ * Problem: Given access to a node in list delete the Node.
+ *          Cracking the Coding Interview
+ * ***************************************************************************************/
 
 public class DeleteGivenNode {
 	public static void deleteGivenNode(Node n){

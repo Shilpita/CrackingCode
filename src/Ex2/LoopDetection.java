@@ -1,5 +1,13 @@
 package Ex2;
 
+/**************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Dec22,2016
+ * Problem: Given access to list detect loop in the list.
+ *          Cracking the Coding Interview
+ * ***************************************************************************************/
+
+
 import java.util.HashSet;
 
 public class LoopDetection {

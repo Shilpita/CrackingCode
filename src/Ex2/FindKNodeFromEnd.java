@@ -1,5 +1,12 @@
 package Ex2;
 
+/**************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Dec18,2016
+ * Problem: Given a Linked List find the Kth node from the End.
+ *          Cracking the Coding Interview
+ * ***************************************************************************************/
+
 public class FindKNodeFromEnd {
 	
 	public static Node getListLength(Node head,int k){

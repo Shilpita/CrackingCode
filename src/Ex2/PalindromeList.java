@@ -1,5 +1,12 @@
 package Ex2;
 
+/**************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Dec22,2016
+ * Problem: Given a Linked List Detect if it is palindrome list.
+ *          Cracking the Coding Interview
+ * ***************************************************************************************/
+
 public class PalindromeList {
 	public static boolean isPalindrome(Node head){
 		if(head==null)return false;

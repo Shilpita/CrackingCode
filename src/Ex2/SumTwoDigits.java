@@ -1,6 +1,10 @@
 package Ex2;
-
-import javax.naming.spi.DirStateFactory.Result;
+/**************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Dec20,2016
+ * Problem: Given Two list get sum of the nodes in result list
+ *          Cracking the Coding Interview
+ * ***************************************************************************************/
 
 public class SumTwoDigits {
 	

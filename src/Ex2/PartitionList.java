@@ -1,4 +1,12 @@
 package Ex2;
+/**************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Dec20,2016
+ * Problem: Given a list and inout, partition the list to contain all smaller data 
+ * 		    to left of input and larger to right of input
+ *          Cracking the Coding Interview
+ * ***************************************************************************************/
+
 
 public class PartitionList {
 	public static Node partition(Node head, int n){
