@@ -2,7 +2,6 @@ package Ex1;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 /**************************************************************************************
  * Author : Shilpita Roy
  * Date   : Jan5,2017
