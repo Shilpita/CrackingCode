@@ -7,6 +7,7 @@ import java.util.Stack;
  * Date   : Jan11,2017
  * Problem: Sorting Stack-> Write a program to sort a stack such that the smallest items are on the top.
  * 		    You can use an additional temporary stack, but you may not copy the elements into any other data structure
+ * 			METHOD 2: RECURSION USING ONLY THE GIVEN STACK WITH O(N*N) TIME COMPLEXITY.
  *          Cracking the Coding Interview
  * ***************************************************************************************************************************/
 
