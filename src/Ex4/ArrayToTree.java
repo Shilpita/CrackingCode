@@ -1,5 +1,7 @@
 package Ex4;
 
+import Ex4.General.TreeNode;
+
 /**************************************************************************************************************************
  * Author : Shilpita Roy
  * Date   : Jan21,2017
@@ -13,7 +15,7 @@ public class ArrayToTree {
 		if(start > end)
 		return null;
 		
-		int mid = start + (end - start)/2;
+		int mid = start + (end - start)/2; /// get the mid of the array as the root
 		
 		TreeNode TreeNode = new TreeNode (arr[mid]);
 		TreeNode.left = buildBST(arr, start, mid-1);

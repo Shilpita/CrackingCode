@@ -1,12 +1,13 @@
-package Ex4;
+package Ex4.General;
 
 /* Class for nodes of binary tree*/
 
 public class TreeNode{
-	int data;
-	TreeNode left, right;
+	public int data;
+	public TreeNode left;
+	public TreeNode right;
 	
-	TreeNode(int d){
+	public TreeNode(int d){
 		this.data = d;
 		left = null;
 		right = null;

@@ -1,6 +1,8 @@
 package Ex4;
 
 import java.util.*;
+
+import Ex4.General.TreeNode;
 /*
 class TreeNode{
 	int data;
