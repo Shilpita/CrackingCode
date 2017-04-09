@@ -14,6 +14,7 @@ import Ex4.General.TreeNode;
 public class PathSumTree {
 	
 	public static int pathSum(TreeNode node , int target){
+		System.out.println("Target sum :"+ target);
 		HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
 		map.put(0, 1); // default sum =0 has count 1
 		return getPathSum(node,0,target,map);
@@ -36,12 +37,17 @@ public class PathSumTree {
 		int result = map.getOrDefault(sum-target, 0); // get the count of the paths which have the target result
 		map.put(sum, map.getOrDefault(sum, 0)+1); // add the count for the current sum
 		
+		System.out.println("Current Node value: "+ node.data
+							+"\tCurrent Sum: "+ sum
+							+"\t Current sum-target: "+ (sum-target)
+							+"\t Before recurring result :"+ result
+							+"\tBefore recurring : "+ map.toString());
 		
 		// recursively call to get the count on left and right subtree
 		result+= getPathSum(node.left, sum, target, map) +getPathSum(node.right, sum, target, map); 
 		
 		map.put(sum, map.get(sum)-1); // Remove the count from the current node so other paths are not affected
-		
+		System.out.println("\nResult : " +result +"\tAfter recurring : "+map.toString());
 		return result;
 		
 	}
