@@ -6,31 +6,30 @@ import java.util.*;
 /**************************************************************************************************************************
  * Author : Shilpita Roy
  * Date   : Feb18,2017
- * Problem: Route between Nodes-> Given a directed graph, design an algorithm to 
+ * Problem: 4.1 Route between Nodes-> Given a directed graph, design an algorithm to 
  * 			find out whether there is a route between 2 nodes
  *          Cracking the Coding Interview
  * ***************************************************************************************************************************/
-public class FindRoutedNodes {
+public class FindRoutedNodes_4_1 {
+	// To  check if two nodes are connected we can use a BFS from the source till we reach the destination or return false.
+	// Time Complexity : O(V+E) Space Complexity : O(N) for the queue
 	public static boolean isReachable(Graph G,int s, int d){
 	
 		boolean[] visted = new boolean[G.V]; // Array to mark all visited nodes.
 		Queue<Integer> queue = new LinkedList<Integer>(); //Queue to track the next node to be visted
 		visted[s] = true;
 		queue.add(s);
-		Iterator i; //iterator for all the nodes connected source node
+		
 		while(!queue.isEmpty()){
 			int current = queue.poll();
-			i = G.getAdj(current).iterator();
-			//System.out.println(i.toString());
-			while(i.hasNext()){
-				int next = (int) i.next();
-				if(next==d)
+			for(Integer i : G.getAdj(current)){
+				if(i == d)
 					return true;
 				else{
-					visted[next]=true;
-					queue.add(next);
+					visted[i] = true;
+					queue.add(i);
 				}
-			}
+			}		
 		}
 		return false;
 	}
