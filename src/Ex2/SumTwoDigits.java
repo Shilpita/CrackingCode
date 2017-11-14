@@ -71,7 +71,7 @@ public class SumTwoDigits {
 
 
 	public static void main(String[] args) {
-		int a = 617;
+		int a = 7617;
 		int b = 295;
 		
 		Node first1 = createReversedDigitList(a);

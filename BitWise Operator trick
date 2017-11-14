@@ -1,0 +1,37 @@
+Operator    Name         Example     Result  Description
+a & b       and          3 & 5       1       1 if both bits are 1.
+a | b       or           3 | 5       7       1 if either bit is 1.
+a ^ b       xor          3 ^ 5       6       1 if both bits are different.
+~a          not          ~3          -4      Inverts the bits.
+n << p      left shift   3 << 2      12      Shifts the bits of n left p positions. Zero bits are shifted into the low-order positions.
+n >> p      right shift  5 >> 2      1       Shifts the bits of n right p positions. If n is a 2's complement signed number, the sign bit is shifted into the high-order positions.
+n >>> p     right shift  -4 >>> 28   15      Shifts the bits of n right p positions. Zeros are shifted into the high-order positions.
+
+
+These operators can come in handy when you need to read and write to integers where the individual bits should be interpreted as flags, or when a specific range of bits in an integer have a special meaning and you want to extract only those. You can do a lot of every day programming without ever needing to use these operators, but if you ever have to work with data at the bit level, a good knowledge of these operators is invaluable.
+
+
+(decimal)    (binary)
+     5     =  101
+     6     =  110
+------------------ xor
+     3     =  011
+
+
+^ | 0 1      ^ | F T
+--+-----     --+-----
+0 | 0 1      F | F T
+1 | 1 0      T | T F
+
+
+
+Lot many people have already explained about what it is and how it can be used but apart from the obvious you can use this operator to do a lot of programming tricks like
+
+XORing of all the elements in a boolean array would tell you if the array has odd number of true elements
+If you have an array with all numbers repeating even number of times except one which repeats odd number of times you can find that by XORing all elements.
+Swapping values without using temporary variable
+Finding missing number in the range 1 to n
+Basic validation of data sent over the network.
+Lot many such tricks can be done using bit wise operators, interesting topic to explore.
+
+

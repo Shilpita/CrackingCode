@@ -2,8 +2,6 @@ package Ex4;
 
 import java.util.HashMap;
 
-import Ex4.General.TreeNode;
-
 /*********************************************************************************************************************************************
  * Author : Shilpita Roy
  * Date   : April6,2017

@@ -12,12 +12,12 @@ public class BuildOrder {
 	public static List<Integer> order = new ArrayList<Integer>();
 	public static int[] visited ;
 	public static int[][] graph ;
+	
 	public static void main(String[] args) {
 		int[] projects = {0,1,2,3,4,5};
 		int[][] dependencies = {{3, 0}, {1, 5}, {3, 1}, {0, 5}, {2, 3}};   ///{{0,3},{5,2},{2,3},{5,0},{3,2}};
 		List<Integer> order1 = buildOrder(projects,dependencies);
-		System.out.println(order1.toString());
-		
+		System.out.println(order1.toString());	
 	}
 
 	private static List<Integer> buildOrder(int[] projects, int[][] dependencies) {

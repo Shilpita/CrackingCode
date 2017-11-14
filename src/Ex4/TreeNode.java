@@ -1,4 +1,4 @@
-package Ex4.General;
+package Ex4;
 
 /* Class for nodes of binary tree*/
 

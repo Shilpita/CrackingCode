@@ -1,11 +1,9 @@
-package Ex4;
-
-import Ex4.General.TreeNode;
+ package Ex4;
 
 /**************************************************************************************************************************
  * Author : Shilpita Roy
  * Date   : April4,2017
- * Problem: Binary Tree: Given a Binary tree and two nodes find the first comon ancestor of the two nodes.
+ * Problem: Binary Tree: Given a Binary tree and two nodes find the first common ancestor of the two nodes.
  *          Cracking the Coding Interview
  * ***************************************************************************************************************************/
 
@@ -26,10 +24,10 @@ public class FirstCommonAncestor {
 	    a.right = c;
 	    b.left = d;
 	    b.right = e;
-	  //  e.right = h;
+	    //e.right = h;
 	    d.left = f;
 	    d.right = g;
-	    TreeNode ancestor = commonAncestor(a, g, h);
+	    TreeNode ancestor = commonAncestor(a, h, h);
 	    
 	    if(v1 && v2) 
 	    	System.out.println(ancestor.data); // if both nodes are in tree then v1 n v2 set
@@ -57,20 +55,21 @@ public class FirstCommonAncestor {
 			v2 = true ;
 			return root;
 		}
-		
+		/*
 		if(p == q){
 			v1 = true ;
 			v2 = true ;
 			return p;
 		}
-		
+		*/
 		TreeNode left = commonAncestor(root.left , p , q);
 		TreeNode right = commonAncestor(root.right , p , q);
-		
+
 		if(left != null && right != null) // p & q in different subtree then root is the ancestor
 			return root;
-		
+
 		return (left!= null) ? left : right; // either left or right subtree has the ancestor
+
 	}
 
 }
