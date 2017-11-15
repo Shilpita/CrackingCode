@@ -3,10 +3,10 @@ package Ex4;
 /**************************************************************************************************************************
  * Author : Shilpita Roy
  * Date   : Jan22,2017
- * Problem: Validate BST-> Given a binary tree check if its BST.
+ * Problem: 4.5 Validate BST-> Given a binary tree check if its BST.
  *          Cracking the Coding Interview
  *****************************************************************************************************************************/
-public class ValidateBST {
+public class ValidateBST_4_5 {
 	private static TreeNode btree;
 	
 	private static boolean isBST(TreeNode root , int min, int max){
