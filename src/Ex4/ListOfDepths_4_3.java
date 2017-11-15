@@ -1,38 +1,42 @@
 package Ex4;
 
 import java.util.*;
-/*
-class TreeNode{
-	int data;
-	TreeNode left, right;
-	
-	TreeNode(int d){
-		this.data = d;
-		left = null;
-		right = null;
-	}
-}
-*/
-public class ListOfDepths {
+/**************************************************************************************************************************
+ * Author : Shilpita Roy
+ * Date   : Nov14,2017
+ * Problem: 4.3 Given a binary tree, design an algorithm which creates a linked list of all the nodes at 
+ * 			each depth (e.g., if you have a tree with depth D, you'll have D linked lists).
+ *          Cracking the Coding Interview
+ * ***************************************************************************************************************************/
+public class ListOfDepths_4_3{
 	private static TreeNode btree;
+	
+	//Level order traversal of the tree and at each level maintain a separate LinkedList
+	// Time Complexity = O(N)   Space Complexity = O(N) for linkedList
 	
 	public static ArrayList<LinkedList<TreeNode>> levelList(TreeNode root){
 		ArrayList<LinkedList<TreeNode>> result = new ArrayList<LinkedList<TreeNode>>();
 		
 		if(root == null) return null;
-		
+
 		LinkedList<TreeNode> list = new LinkedList<TreeNode>();
+		
 		list.add(root);
+		
 		while(!list.isEmpty()){
+			
 		   result.add(list);
-		   LinkedList<TreeNode> parentList = list;
-		   list = new LinkedList<TreeNode>();
-		   for(TreeNode i : parentList){
+		   
+		   LinkedList<TreeNode> currentList = list;
+		   
+		   list = new LinkedList<TreeNode>(); //reinitialize the list
+		   
+		   for(TreeNode i : currentList){
 			   if(i.left != null)
 				   list.add(i.left);
 			   if(i.right != null)
 				   list.add(i.right);
-		   }
+		   }	   
 		}
 		
 		return result;
